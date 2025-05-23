@@ -1,5 +1,5 @@
 // relay/handlers.go
-package handlers
+package relay
 
 import (
 	"encoding/json"
@@ -44,7 +44,7 @@ func ChargeHandler(w http.ResponseWriter, r *http.Request) {
 
 func VerifyHandler(w http.ResponseWriter, r *http.Request) {
 	// Same pattern as above
-	fmt.Fprintf(w, "🔍 Verified successfully")
+	fmt.Fprintf(w, " Verified successfully")
 }
 
 func HealthCheck(w http.ResponseWriter, r *http.Request) {

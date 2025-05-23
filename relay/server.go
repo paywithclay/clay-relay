@@ -3,14 +3,12 @@ package relay
 import (
 	"fmt"
 	"net/http"
-
-	"github.com/paywithclay/clay-relay/relay/handlers"
 )
 
 func StartServer() {
-	http.HandleFunc("/charge", handlers.ChargeHandler)
-	http.HandleFunc("/verify", handlers.VerifyHandler)
-	http.HandleFunc("/health", handlers.HealthCheck)
+	http.HandleFunc("/charge", ChargeHandler)
+	http.HandleFunc("/verify", VerifyHandler)
+	http.HandleFunc("/health", HealthCheck)
 
 	port := "3001"
 	fmt.Printf("🔌 Listening on port :%s\n", port)
