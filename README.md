@@ -6,6 +6,7 @@
 ---
 
 ## 🤝 What is Clay Relay?
+> This is still in experimental development please
 
 **Clay Relay** is a self-hosted, secure proxy service that lets you connect any payment gateway (like Paystack, Flutterwave, or Stripe) without sharing your API keys with anyone — not even us.
 
